@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextGenAI - Your Idea, Our Creation</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-icon">✦</span>
+            NextGen<span>AI</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#dashboard">Dashboard</a>
+        </div>
+
+        <button class="nav-btn" onclick="showSection('idea-section')">
+            Validate Idea
+        </button>
+    </nav>
+
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <div class="badge">
+                ✨ AI-Powered Idea Validation
+            </div>
+
+            <h1>
+                Your Idea.<br>
+                <span>Our Creation.</span>
+            </h1>
+
+            <p>
+                Turn your business idea into a clear action plan.
+                Validate your problem, understand your market,
+                analyze competition and discover your next steps.
+            </p>
+
+            <div class="hero-buttons">
+                <button class="primary-btn" onclick="showSection('idea-section')">
+                    Validate My Idea →
+                </button>
+
+                <button class="secondary-btn" onclick="showSection('features')">
+                    Explore Features
+                </button>
+            </div>
+
+            <div class="trust">
+                <div>
+                    <strong>01</strong>
+                    <span>Validate</span>
+                </div>
+
+                <div>
+                    <strong>02</strong>
+                    <span>Understand</span>
+                </div>
+
+                <div>
+                    <strong>03</strong>
+                    <span>Execute</span>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- HERO CARD -->
+        <div class="hero-card">
+
+            <div class="card-top">
+                <span>AI IDEA SCORE</span>
+                <span class="live">● Prototype</span>
+            </div>
+
+            <div class="score-circle">
+                <div>
+                    <strong>78</strong>
+                    <small>/100</small>
+                </div>
+            </div>
+
+            <h3>Promising Idea</h3>
+
+            <p>
+                Your idea shows good potential.
+                Validate customer demand before building the MVP.
+            </p>
+
+            <div class="mini-stats">
+                <div>
+                    <span>Market</span>
+                    <strong>7.5/10</strong>
+                </div>
+
+                <div>
+                    <span>Problem</span>
+                    <strong>8.5/10</strong>
+                </div>
+
+                <div>
+                    <span>Uniqueness</span>
+                    <strong>7/10</strong>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FEATURES -->
+    <section id="features" class="section">
+
+        <div class="section-heading">
+            <span class="section-label">WHAT WE DO</span>
+
+            <h2>
+                From <span>Idea</span> to Action
+            </h2>
+
+            <p>
+                NextGenAI helps you understand whether your idea is worth pursuing
+                and what you should do next.
+            </p>
+        </div>
+
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+                <div class="feature-icon">💡</div>
+                <h3>Idea Validation</h3>
+                <p>
+                    Analyze your problem, target users and potential demand.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>Market Analysis</h3>
+                <p>
+                    Understand market potential and identify important gaps.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">⚔️</div>
+                <h3>Competitor Analysis</h3>
+                <p>
+                    Compare existing solutions and identify opportunities
+                    for differentiation.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🚀</div>
+                <h3>Execution Roadmap</h3>
+                <p>
+                    Get practical next steps instead of just information.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- IDEA INPUT -->
+    <section id="idea-section" class="section idea-section">
+
+        <div class="section-heading">
+            <span class="section-label">STEP 01</span>
+
+            <h2>
+                Tell us about your <span>idea</span>
+            </h2>
+
+            <p>
+                Give us a basic description and we'll show you how the
+                validation process works.
+            </p>
+        </div>
+
+
+        <div class="idea-container">
+
+            <form id="ideaForm">
+
+                <label for="ideaName">
+                    Idea Name
+                </label>
+
+                <input
+                    type="text"
+                    id="ideaName"
+                    placeholder="e.g. Smart Food Waste Manager"
+                    required
+                >
+
+
+                <label for="ideaDescription">
+                    Describe your idea
+                </label>
+
+                <textarea
+                    id="ideaDescription"
+                    rows="5"
+                    placeholder="What problem does your idea solve? Who will use it?"
+                    required
+                ></textarea>
+
+
+                <label for="targetCustomer">
+                    Target Customer
+                </label>
+
+                <input
+                    type="text"
+                    id="targetCustomer"
+                    placeholder="e.g. College students"
+                    required
+                >
+
+
+                <button type="submit" class="primary-btn full-btn">
+                    Analyze My Idea ✦
+                </button>
+
+            </form>
+
+
+            <div class="idea-info">
+
+                <h3>What will be analyzed?</h3>
+
+                <div class="analysis-point">
+                    <span>✓</span>
+                    Problem relevance
+                </div>
+
+                <div class="analysis-point">
+                    <span>✓</span>
+                    Target customers
+                </div>
+
+                <div class="analysis-point">
+                    <span>✓</span>
+                    Market potential
+                </div>
+
+                <div class="analysis-point">
+                    <span>✓</span>
+                    Competition
+                </div>
+
+                <div class="analysis-point">
+                    <span>✓</span>
+                    Opportunity gaps
+                </div>
+
+                <div class="analysis-point">
+                    <span>✓</span>
+                    Recommended next steps
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ANALYSIS DASHBOARD -->
+    <section id="dashboard" class="section dashboard-section">
+
+        <div class="section-heading">
+            <span class="section-label">STEP 02</span>
+
+            <h2>
+                AI Validation <span>Dashboard</span>
+            </h2>
+
+            <p id="analysisMessage">
+                Prototype analysis results will appear here.
+            </p>
+        </div>
+
+
+        <div class="dashboard-grid">
+
+            <!-- OVERALL SCORE -->
+            <div class="score-card">
+
+                <span class="card-label">OVERALL SCORE</span>
+
+                <div class="big-score">
+                    <strong id="overallScore">78</strong>
+                    <span>/100</span>
+                </div>
+
+                <div class="score-status">
+                    ● Promising Idea
+                </div>
+
+                <p>
+                    The idea has potential, but customer validation
+                    should be completed before MVP development.
+                </p>
+
+            </div>
+
+
+            <!-- METRICS -->
+            <div class="metrics-card">
+
+                <h3>Validation Metrics</h3>
+
+                <div class="metric">
+                    <div>
+                        <span>Problem Relevance</span>
+                        <strong>85%</strong>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:85%"></div>
+                    </div>
+                </div>
+
+
+                <div class="metric">
+                    <div>
+                        <span>Market Potential</span>
+                        <strong>75%</strong>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:75%"></div>
+                    </div>
+                </div>
+
+
+                <div class="metric">
+                    <div>
+                        <span>Uniqueness</span>
+                        <strong>70%</strong>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:70%"></div>
+                    </div>
+                </div>
+
+
+                <div class="metric">
+                    <div>
+                        <span>Competition Opportunity</span>
+                        <strong>82%</strong>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:82%"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- RECOMMENDATION -->
+        <div class="recommendation">
+
+            <div class="recommendation-icon">
+                ✦
+            </div>
+
+            <div>
+                <span class="section-label">AI RECOMMENDATION — PROTOTYPE</span>
+
+                <h3>
+                    Validate customer demand before building the MVP.
+                </h3>
+
+                <p>
+                    Interview potential users, understand their current
+                    alternatives and check whether they would actually
+                    use or pay for your proposed solution.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ROADMAP -->
+    <section class="section roadmap-section">
+
+        <div class="section-heading">
+            <span class="section-label">STEP 03</span>
+
+            <h2>
+                Your Execution <span>Roadmap</span>
+            </h2>
+
+            <p>
+                Turn validation insights into practical action.
+            </p>
+        </div>
+
+
+        <div class="roadmap">
+
+            <div class="roadmap-item completed">
+                <div class="road-number">01</div>
+
+                <div class="road-content">
+                    <span>WEEK 1</span>
+                    <h3>Customer Validation</h3>
+                    <p>
+                        Talk to potential users and understand their
+                        actual problems and needs.
+                    </p>
+                </div>
+
+                <div class="status">✓</div>
+            </div>
+
+
+            <div class="roadmap-item">
+                <div class="road-number">02</div>
+
+                <div class="road-content">
+                    <span>WEEK 2</span>
+                    <h3>Competitor Research</h3>
+                    <p>
+                        Identify existing solutions and compare their
+                        strengths, weaknesses and gaps.
+                    </p>
+                </div>
+
+                <div class="status">→</div>
+            </div>
+
+
+            <div class="roadmap-item">
+                <div class="road-number">03</div>
+
+                <div class="road-content">
+                    <span>WEEK 3</span>
+                    <h3>MVP Planning</h3>
+                    <p>
+                        Define the core features required for the
+                        first working version.
+                    </p>
+                </div>
+
+                <div class="status">→</div>
+            </div>
+
+
+            <div class="roadmap-item">
+                <div class="road-number">04</div>
+
+                <div class="road-content">
+                    <span>WEEK 4</span>
+                    <h3>Launch Preparation</h3>
+                    <p>
+                        Prepare the product, collect feedback and
+                        plan the initial launch.
+                    </p>
+                </div>
+
+                <div class="status">→</div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROGRESS -->
+    <section class="section progress-section">
+
+        <div class="section-heading">
+            <span class="section-label">STEP 04</span>
+
+            <h2>
+                Track Your <span>Progress</span>
+            </h2>
+        </div>
+
+
+        <div class="progress-dashboard">
+
+            <div class="progress-main">
+
+                <div class="progress-header">
+                    <div>
+                        <span>Current Progress</span>
+                        <h3>Idea Validation</h3>
+                    </div>
+
+                    <strong>25%</strong>
+                </div>
+
+                <div class="large-progress">
+                    <div></div>
+                </div>
+
+                <p>
+                    1 of 4 major milestones completed
+                </p>
+
+            </div>
+
+
+            <div class="task-card">
+
+                <h3>Next Tasks</h3>
+
+                <label>
+                    <input type="checkbox">
+                    Interview 5 potential customers
+                </label>
+
+                <label>
+                    <input type="checkbox">
+                    Identify 3 competitors
+                </label>
+
+                <label>
+                    <input type="checkbox">
+                    Compare existing solutions
+                </label>
+
+                <label>
+                    <input type="checkbox">
+                    Define MVP features
+                </label>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-logo">
+            ✦ NextGenAI
+        </div>
+
+        <p>
+            Your Idea, Our Creation.
+        </p>
+
+        <span>
+             AI & Data Science
+        </span>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
