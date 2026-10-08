@@ -1,1 +1,1 @@
-# Vanashree18
+AI-Powered Idea Validation & Execution Platform
